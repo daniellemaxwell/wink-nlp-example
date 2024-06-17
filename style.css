@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+#highlighted-text {
+  padding: 20px;
+  line-height: 2;
+}
+
+#stats {
+  padding: 0px 20px;
+}
+
+#text-input {
+ width: 300px;
+}
+
+#text-submit-bttn {
+  background-color: black;
+  color: white;
+  width: 309px;
+  height: 35px;
+}
+
+.complex-word {
+  font-weight: 600;
+  padding: 0px 5px 0px 5px;
+  background-color: #fde995;
+  border-radius: 10px;
+}
