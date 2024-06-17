@@ -22,7 +22,6 @@ submitBttn.addEventListener('click', (e) => {
 
   // Get readability stats for the text input.
   const readabilityStats = doc.out(its.readabilityStats);
-  console.log(readabilityStats);
 
   readingStats.insertAdjacentHTML('afterbegin', `
   <h2>Readability Stats</h2>
@@ -42,10 +41,9 @@ submitBttn.addEventListener('click', (e) => {
     complexWordsList.push(word.toLowerCase())
   };
 
-  console.log('complexWordsList:', complexWordsList)
-
   const textList = textInput.split(' ');
   textList.forEach((word, idx) => {
+    // Remove any special characters from the word.
     const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
     if (complexWordsList.includes(cleanWord.toLowerCase())) {
       textList[idx] = `<span class="complex-word">${word}</span>`
