@@ -19,6 +19,7 @@ submitBttn.addEventListener('click', (e) => {
 
   // Clear the form input.
   text.value = '';
+  readingStats.innerHTML = '';
 
   // Get readability stats for the text input.
   const readabilityStats = doc.out(its.readabilityStats);

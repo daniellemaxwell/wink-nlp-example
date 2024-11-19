@@ -16,8 +16,9 @@ submitBttn.addEventListener('click', (e) => {
   const textInput = text.value
   const doc = nlp.readDoc(textInput);
 
-  // Clear the form input.
+  // Clear the form input and remove the reading stats.
   text.value = '';
+  readingStats.innerHTML = '';
 
   // Get readability stats for the text input.
   const readabilityStats = doc.out(its.readabilityStats);
